@@ -18,12 +18,14 @@
 
 	<!-- FontAwesome JS-->
 	<script defer src="assets/fontawesome/js/all.min.js"></script>
+	<link href="/assets/fontawesome/css/all.min.css" rel="stylesheet">
 
 	<!-- Plugins CSS -->
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
 
 	<!-- Theme CSS -->
 	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
 
 </head>
 
@@ -68,15 +70,19 @@
 					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
 								class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Introduction</a>
 					</li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Section Item 1.1</a></li>
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
 								class="theme-icon-holder mr-2"><i class="fa fa-bars"></i></span>Navigation</a>
 					</li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Section Item 2.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">General User Interface</a></li>
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span
 								class="theme-icon-holder mr-2"><i class="fas fa-graduation-cap"></i></span>Exam
 							Generation</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Section Item 3.1</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">How to generate a practice
+							exam</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">What are my exam options?</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">How to use the Download
+							Feature</a></li>
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
 								class="theme-icon-holder mr-2"><i class="fas fa-book"></i></span>Weekly Quiz</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Section Item 4.1</a></li>
@@ -139,7 +145,7 @@
 						<!--//docs-intro-->
 					</header>
 					<section class="docs-section" id="item-2-1">
-						<h2 class="section-heading">Section Item 2.1</h2>
+						<h2 class="section-heading">The Interface: <i>A Tour de App</i></h2>
 						<p>In an attempt to make this app feel as familar as possible, many common icons and buttons
 							have been included.
 						</p>
@@ -212,6 +218,89 @@
 										changes to the Question Bank.</p>
 								</div>
 							</div>
+
+						</div>
+						<div class="card-group" style="width: 85%;">
+							<div class="card p-2">
+								<i class="fa fa-chevron-right mx-auto" aria-hidden="true" style="font-size: 8em;"></i>
+								<div class="card-body">
+									<h5 class="card-title">The Chevron</h5>
+									<p class="card-text">Commonly used to show the ability to navigate between "pages."
+									</p>
+									<p class="card-text">In this app, the right chevron allows you to view and edit the
+										details of the selected question via the details page or Question Editor.</p>
+								</div>
+							</div>
+							<div class="card p-2">
+								<i class="fas fa-sync mx-auto" aria-hidden="true" style="font-size: 8em;"></i>
+								<div class="card-body">
+									<h5 class="card-title">The Sync Icon</h5>
+									<p class="card-text">Used to syncronize or refresh an interface with a database or
+										other applications.</p>
+									<p class="card-text">Because this app interactes with a backend database, we need
+										the ability to refresh the data stream. Our refresh button looks slightly
+										different, but servers this exact function. It allows us to ensure all the data
+										the app is "seeing" is the most up to date. This is to ensure that everything
+										works as expected.</p>
+									<p>
+										While we have a refresh button, rest assured, the an datastreams will refresh as
+										appropriate and automatically should you leave the app idle.
+									</p>
+								</div>
+							</div>
+							<div class="card p-2">
+								<i class="fas fa-home mx-auto" aria-hidden="true" style="font-size: 8em;"></i>
+								<div class="card-body">
+									<h5 class="card-title">The Home Button</h5>
+									<p class="card-text">Used to navigate back to a home view.</p>
+									<p class="card-text">In this app, the home button will bring you back to the home
+										view.</p>
+								</div>
+							</div>
+						</div>
+						<div class="mt-4">
+							<h3>And More</h3>
+							<p class="card-text">Common interfaces such as search bars, text boxes, dropdown
+								selection boxes, and buttons.</p>
+							<p class="card-text">In this app, there are several common interfaces with features
+								that you may be familar with from other app or software interactions</p>
+							<p class="card-text">Text boxes with character limits, dropdowns with several
+								options, list boxes with multi-select, buttons that you can press, and
+								checkboxes you can check.</p>
+							<h6>Some specific interfaces include:</h6>
+							<ul>
+								<li>
+									The Search box at the top of the home view allows you to search for a question by
+									keyword. This serach will find keywords
+									that appear in both the question and answer text. It will automatically begin
+									searching as soon as you begin typing.
+									In order to return to the unfiltered question bank, the search bar must be blank. I
+									have included a clear button that appears whenever
+									there is text in the field.
+								</li>
+								<li>
+									The single option dropdown boxes: These dropdowns will only allow you to choose one
+									option, and these are in place in situations
+									where it would only make sense to be able to choose one option. You simply click the
+									downward facing chevron and highlight your option and click.
+								</li>
+								<li>
+									The multi-select list box: This particular feature only appears in the Exam Designer
+									page. It allows you to make multiple selections and filter the
+									generated exams by the given selections.
+								</li>
+								<li>
+									The two methods by which you can delete questions are both protected by a familiar
+									"Are you sure?" popup. That is, whether you are
+									utilizing the "Select and Batch Delete" or "Deleting a Single Question" utilites,
+									you will be confronted by a popup and a big red "Yes I am sure" button. Once you
+									press
+									the big red button, you questions are deleted, forever. But that's okay, one would
+									be hardpressed
+									to do it by accident. And, in the case of this happening, I have my ways of getting
+									the info back ;)
+								</li>
+							</ul>
 						</div>
 			</div>
 
@@ -223,15 +312,140 @@
 				<header class="docs-header">
 					<h1 class="docs-heading">Exam Generation</h1>
 					<section class="docs-intro">
-						<p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-							finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit.
-							Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam
-							lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						<p>Automatic exam generation, designed to simultaeously allow the trainers to curate exams and
+							generate randome exams that are compliant with program standards <i>by design!</i></p>
 					</section>
 					<!--//docs-intro-->
 				</header>
 				<section class="docs-section" id="item-3-1">
-					<h2 class="section-heading">Section Item 3.1</h2>
+					<h2 class="section-heading">Curated exams</h2>
+					<p>For the purposes of creating practice exams, the ability to select specific questions by hand and
+						generate an exam from that selection has been included.</p>
+					<p>More specifically, you can make a selection from the Home View using the check boxes. Next, using
+						the hamburger menu, you can slect the "Export Selected Exam" option.</p>
+					<div class="card p-2 bg-dark" style="width: 85%;">
+						<div class="card-header bg-dark">
+							<h4>The Export Selected Exam popup.</h4>
+						</div>
+						<img src="/assets/images/Export Selected.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="card-text" style="color:rgb(59, 59, 59)">As the name implies, this is the popup
+								that appears when you press the Export Selected Exam button. Next, you will fill out
+								the file name text box with any file name that you desire and press Export. The practice
+								test
+								and its answer key will then be downloaded as described below.</p>
+						</div>
+					</div>
+					<p class="mt-4">
+						<b>Usage Tip: </b> The curated exam feature would be perfect for practice or training. This
+						feature would also be useful for upgrades in the event of an exam failure.
+					</p>
+				</section>
+				<section class="docs-section" id="item-3-2">
+					<h2 class="section-heading">The Algorithms</h2>
+					<p>There are two different automatically generated exams. I called them the Methods of Generating.
+						They are the
+						Pseudorandom method and Seed method.
+					</p>
+					<div class="card" style="width:85%;">
+						<img src="/assets/images/Methods of generating.png" class="card-img-top w-50 mx-auto p-4"
+							alt="...">
+						<div class="card-body">
+							<div class="accordion" id="accordionExample">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+											<button class="btn btn-link btn-block text-left" type="button"
+												data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+												aria-controls="collapseOne">
+												Pseudorandom
+											</button>
+										</h2>
+									</div>
+									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+										data-parent="#accordionExample">
+										<div class="card-body">
+											As the name implies, the Pseudorandom method of generating provides the user with as random of an exam as possible given a few constraints.
+											<ul>
+												<li>
+													Bank Size: Obviously, the exam bank is finite, and therefore the results of the pseudorandom algorith can only be so random. More to follow.
+												</li>
+												<li>
+													Computers cannot be "Random": The limitations of the technology that we are using is another constraint. Without venturing into
+													quantum physics, it is impossible to ask a computer to be random. Hence "pseudo" random, behind the scenes is an algorithm that does
+													its best to simulate what humans generally perceive as random. 
+												</li>
+											</ul>
+											<p> How it works (in general)
+											<code><pre>
+While (Number of questions already selected is less than the number of questions desired) { 
+	Generate a random number between 1 and n: 
+		Pull the question whose ID you just randomly generated:
+			if
+			(
+			This question isnt already in the exam AND 
+			This question is at the chosen CET Level OR If more than 50% of the exam has been created at or below AND
+			This question is the correct category if a learning objective was selected AND
+			The question wasnt used on the previous exam OR more than 50% of the exam has already been created
+			)
+			then (add the question to the exam)	
+}
+</pre></code>
+											</p>
+											<p>
+												Where n is the total number of question in the exam bank. 
+											</p>
+											<p>Some of the reasoning behind this algorithm is as follows</p>
+											<ol>
+												<li>
+													To ensure that each exam generated (given a couple of assumptions) is a requsite amount unique from any recently
+													generated exams. 
+												</li>
+												<li>
+													In compliance with Microsoft guidance, the different levels of exam are 50% unique from the previous level.
+													By ensuring at least half the exam is at the appropriate CET level
+												</li>
+												<li>
+													To allow the user to generate an exam filtered by Learning Objective, if desired.
+												</li>
+												<li>
+													To ensure that the exam is at or lower than the level of certification it represents.
+												</li>
+											</ol>
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingTwo">
+										<h2 class="mb-0">
+											<button class="btn btn-link btn-block text-left" type="button"
+												data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+												aria-controls="collapseTwo">
+												Seed
+											</button>
+										</h2>
+									</div>
+									<div id="collapseTwo" class="collapse show" aria-labelledby="headingOne"
+										data-parent="#accordionExample">
+										<div class="card-body">
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+											richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+											dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+											tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+											assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+											wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+											vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+											synth nesciunt you probably haven't heard of them accusamus labore
+											sustainable VHS.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="docs-section" id="item-3-3">
+					<h2 class="section-heading">The Output</h2>
 					<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
 						leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
 						felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio

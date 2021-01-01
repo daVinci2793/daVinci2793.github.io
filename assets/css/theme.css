@@ -3295,12 +3295,12 @@ fieldset:disabled a.btn {
 
 .btn-link {
     font-weight: 400;
-    color: #28b76b;
+    color: #4e28b7;
     text-decoration: none
 }
 
 .btn-link:hover {
-    color: #1a7846;
+    color: #461a78;
     text-decoration: underline
 }
 
@@ -11043,7 +11043,7 @@ a.theme-link:hover {
 }
 
 .btn-primary {
-    background: #28b76b
+    background: #7228b7
 }
 
 .btn-secondary {
