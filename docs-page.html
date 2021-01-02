@@ -365,53 +365,93 @@
 									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
 										data-parent="#accordionExample">
 										<div class="card-body">
-											As the name implies, the Pseudorandom method of generating provides the user with as random of an exam as possible given a few constraints.
+											As the name implies, the Pseudorandom method of generating provides the user
+											with as random of an exam as possible given a few constraints.
 											<ul>
 												<li>
-													Bank Size: Obviously, the exam bank is finite, and therefore the results of the pseudorandom algorith can only be so random. More to follow.
+													Bank Size: Obviously, the exam bank is finite, and therefore the
+													results of the pseudorandom algorith can only be so random. More to
+													follow.
 												</li>
 												<li>
-													Computers cannot be "Random": The limitations of the technology that we are using is another constraint. Without venturing into
-													quantum physics, it is impossible to ask a computer to be random. Hence "pseudo" random, behind the scenes is an algorithm that does
-													its best to simulate what humans generally perceive as random. 
+													Computers cannot be "Random": The limitations of the technology that
+													we are using is another constraint. Without venturing into
+													quantum physics, it is impossible to ask a computer to be random.
+													Hence "pseudo" random, behind the scenes is an algorithm that does
+													its best to simulate what humans generally perceive as random.
 												</li>
 											</ul>
 											<p> How it works (in general)
-											<code><pre>
+												<code>
+													<pre>
 While (Number of questions already selected is less than the number of questions desired) { 
 	Generate a random number between 1 and n: 
 		Pull the question whose ID you just randomly generated:
 			if
 			(
 			This question isnt already in the exam AND 
-			This question is at the chosen CET Level OR If more than 50% of the exam has been created at or below AND
+			This question is at the chosen CET Level OR  below if more than 50% of the exam has been created AND
 			This question is the correct category if a learning objective was selected AND
 			The question wasnt used on the previous exam OR more than 50% of the exam has already been created
 			)
 			then (add the question to the exam)	
 }
+
+<samp><i>Where n is the total number of question in the exam bank.</samp></i>
 </pre></code>
-											</p>
-											<p>
-												Where n is the total number of question in the exam bank. 
 											</p>
 											<p>Some of the reasoning behind this algorithm is as follows</p>
 											<ol>
 												<li>
-													To ensure that each exam generated (given a couple of assumptions) is a requsite amount unique from any recently
-													generated exams. 
+													To ensure that each exam generated (given a couple of assumptions)
+													is a requsite amount unique from any recently
+													generated exams.
 												</li>
 												<li>
-													In compliance with Microsoft guidance, the different levels of exam are 50% unique from the previous level.
-													By ensuring at least half the exam is at the appropriate CET level
+													In compliance with Microsoft guidance, the different levels of exam
+													are 50% unique from the previous level
+													by ensuring at least half the exam is at the appropriate CET level.
 												</li>
 												<li>
-													To allow the user to generate an exam filtered by Learning Objective, if desired.
+													To allow the user to generate an exam filtered by Learning
+													Objective, if desired.
 												</li>
 												<li>
-													To ensure that the exam is at or lower than the level of certification it represents.
+													To ensure that the exam is at or below than the level of
+													certification it represents.
 												</li>
 											</ol>
+											<p>
+												The aforemention assumptions were built in to make the "recently used"
+												flag meaningful. Specifically,
+												the flag on a question will only change to a value of true when the
+												Download button is pressed.
+												This is as opposed to every single time the generate exam button is
+												pressed.
+											</p>
+											<h6>
+												Those assumptions are all in the case of a Pseudorandom exam as the
+												recently used flag is ignored for a Seeded exam, and they are as
+												follows:
+											</h6>
+											<ul>
+												<li>
+													The user will only be pressing the Download button when they are
+													satisfied with the exam that has been generated.
+													This is why there is a preview window. It allows you to explore your
+													options.
+												</li>
+												<li>
+													That the download button will only be pressed at expected intervals.
+													That is to say, exams will be needed in a predictable way, such as
+													an individual's certification exams or biennial requalification
+													exams.
+												</li>
+											</ul>
+											<p>
+												With the design of this algorithm and these priniples in mind, the
+												Pseudorandom exam is the preferred method of generation.
+											</p>
 										</div>
 									</div>
 								</div>
@@ -428,15 +468,40 @@ While (Number of questions already selected is less than the number of questions
 									<div id="collapseTwo" class="collapse show" aria-labelledby="headingOne"
 										data-parent="#accordionExample">
 										<div class="card-body">
-											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-											richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-											dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-											tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-											assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-											wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-											vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-											synth nesciunt you probably haven't heard of them accusamus labore
-											sustainable VHS.
+											<p>The Seeded exam is much more simple, much less random, and designed such
+												that given the same number of questions, same CET Level, and same
+												Learning objective
+												the exam will be the same.</p>
+											<p>
+												This does rely on some other nuances. As the exam bank grows and
+												changes, the Seeded exams will change. Without a more complicated
+												seeding or hashing algorithm, I cannot prevent this <small>(though, that
+													does sound like a fun challange)</small>.
+												So, the true purpose of the Seeded exams is to be able to pull up a
+												"known" exam within a reasonable proximity to the last time you pulled
+												it up.
+											</p>
+											<p>
+												It is for this reason that the Answer Key that is generated along side
+												the Seeded exams provides you with the "Exam Details," thereby allowing
+												you to pull up the
+												same exam later.
+											</p>
+											<p>
+												The Seeded exams are based off of the number of desierd questions and
+												the number of questions in the exam bank. I did some math
+												and came up with an algorithm that will reliably generate the maximum
+												number of unique exams from those settings, and do so in a predictable
+												way (given the above assumptions.)
+											</p>
+											<h5>
+												Et Voila, you have exams that can be recalled based on some settings.
+											</h5>
+											<p>
+												Allowing you to pull up the answer key to an exam you lost, or perhaps a
+												"level playing field" practice exam, or a quiz that you particularly
+												appreciate... The training posibilties are endless.
+											</p>
 										</div>
 									</div>
 								</div>
@@ -446,11 +511,123 @@ While (Number of questions already selected is less than the number of questions
 				</section>
 				<section class="docs-section" id="item-3-3">
 					<h2 class="section-heading">The Output</h2>
-					<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-						leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-						felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-						in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-						arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					<p>One could argue that this is the meat and potatoes of the Exam Generation function, so, I will go
+						through step-by-step how to get a physical exam in your hand.</p>
+					<div class="card" style="width:85%;">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-4">
+									<div class="list-group" id="list-tab" role="tablist">
+										<a class="list-group-item list-group-item-action active" id="list-step1-list"
+											data-toggle="list" href="#list-step1" role="tab" aria-controls="step1">Step
+											1</a>
+										<a class="list-group-item list-group-item-action" id="list-step2-list"
+											data-toggle="list" href="#list-step2" role="tab" aria-controls="step2">Step
+											2</a>
+										<a class="list-group-item list-group-item-action" id="list-step3-list"
+											data-toggle="list" href="#list-step3" role="tab" aria-controls="step3">Step
+											3</a>
+										<a class="list-group-item list-group-item-action" id="list-step4-list"
+											data-toggle="list" href="#list-step4" role="tab" aria-controls="step4">Step
+											4</a>
+										<a class="list-group-item list-group-item-action" id="list-step5-list"
+											data-toggle="list" href="#list-step5" role="tab" aria-controls="step5">Step
+											5</a>
+									</div>
+								</div>
+								<div class="col-8">
+									<div class="tab-content" id="nav-tabContent">
+										<div class="tab-pane fade show active" id="list-step1" role="tabpanel"
+											aria-labelledby="list-step1-list">As always, you will start off at the
+											<button type="button" class="btn btn-dark btn-sm" data-toggle="modal"
+												data-target="#Modal1">
+												Home View
+											</button>
+											<div class="modal fade" id="Modal1" tabindex="-1"
+												aria-labelledby="exampleModalLabel" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered modal-xl">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h5 class="modal-title" id="exampleModalLabel">The Home View
+															</h5>
+															<button type="button" class="close" data-dismiss="modal"
+																aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<img src="/assets/images/Home View.png" alt=""
+																style="width: 100%;height: 100%;">
+														</div>
+													</div>
+												</div>
+											</div>
+											<p>
+												From the Home View, you will press the Hamburger Menu and select
+												"Generate Exam" in
+												the upper right-hand corner.
+											</p>
+											<p>
+												This will take you to the Exam Designer.
+											</p>
+										</div>
+										<div class="tab-pane fade" id="list-step2" role="tabpanel"
+											aria-labelledby="list-step2-list">
+											<button type="button" class="btn btn-dark btn-sm" data-toggle="modal"
+												data-target="#Modal2">
+												The Exam Designer
+											</button>
+											<div class="modal fade" id="Modal2" tabindex="-1"
+												aria-labelledby="exampleModalLabel" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered modal-xl">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h5 class="modal-title" id="exampleModalLabel">The Exam
+																Designer
+															</h5>
+															<button type="button" class="close" data-dismiss="modal"
+																aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+														<div class="modal-body">
+															<img src="/assets/images/Exam Designer.png" alt=""
+																style="width: 100%;height: 100%;">
+														</div>
+													</div>
+												</div>
+											</div>
+											page has several interfaces. We will be creating a Pseudorandom exam.
+											<p class="pt-2">
+												To do so you must first select Pseudorandom in the Method of Generating
+												dropdown box. Then you will choose your desired number of questions.
+											</p>
+											<p style="font-size: small;color: rgb(136, 70, 180);">
+												The Number of Questions text box defaults to 30 and will only allow you
+												to enter as many questions as there are total in the bank.
+											</p>
+											<p>
+												Next you will select the desired CET Level, which in the case of a Pseudorandom exam will
+												ensure that the first half of the exam is <strong>AT</strong> the chosen level and the 
+												second half is at or below the chosen level.
+											</p>
+											<p>
+												Finally, you will choose any Learning Objective filters that you desire. This is a multi-select list box and will allow you to
+												choose as many choices as you see fit. The resulting exam will consist only of questions with one of the selected learning objectives.
+												When there are no selections made, the exam will not be filtered at all. 
+											</p>
+										</div>
+										<div class="tab-pane fade" id="list-step3" role="tabpanel"
+											aria-labelledby="list-step3-list"><p>Now you get to press the Generate Exam button</p></div>
+										<div class="tab-pane fade" id="list-step4" role="tabpanel"
+											aria-labelledby="list-step4-list">...</div>
+										<div class="tab-pane fade" id="list-step5" role="tabpanel"
+											aria-labelledby="list-step5-list">...</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</section>
 				<!--//section-->
 			</article>

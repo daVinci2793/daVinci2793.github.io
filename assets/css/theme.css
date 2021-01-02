@@ -3325,10 +3325,10 @@ fieldset:disabled a.btn {
 
 .btn-sm,
 .btn-group-sm>.btn {
-    padding: .25rem .5rem;
+    padding: .25rem .25rem;
     font-size: .875rem;
-    line-height: 1.5;
-    border-radius: .2rem
+    line-height: 0.8;
+    border-radius: .3rem
 }
 
 .btn-block {
@@ -5782,8 +5782,8 @@ a.badge-dark.focus {
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #28b76b;
-    border-color: #28b76b
+    background-color: #5a28b7;
+    border-color: #7e28b7
 }
 
 .list-group-item+.list-group-item {
