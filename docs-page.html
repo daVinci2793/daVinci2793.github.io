@@ -150,7 +150,7 @@
 					</header>
 					<section class="docs-section" id="item-2-1">
 						<h2 class="section-heading">The Interface: <i>A Tour de App</i></h2>
-						<p>In an attempt to make this app feel as familar as possible, many common icons and buttons
+						<p>In an attempt to make this app feel as familiar as possible, many common icons and buttons
 							have been included.
 						</p>
 						<div class="card bg-dark" style="width:85%;">
@@ -239,16 +239,16 @@
 								<i class="fas fa-sync mx-auto" aria-hidden="true" style="font-size: 8em;"></i>
 								<div class="card-body">
 									<h5 class="card-title">The Sync Icon</h5>
-									<p class="card-text">Used to syncronize or refresh an interface with a database or
+									<p class="card-text">Used to synchronize or refresh an interface with a database or
 										other applications.</p>
-									<p class="card-text">Because this app interactes with a backend database, we need
+									<p class="card-text">Because this app interacts with a backend database, we need
 										the ability to refresh the data stream. Our refresh button looks slightly
 										different, but servers this exact function. It allows us to ensure all the data
 										the app is "seeing" is the most up to date. This is to ensure that everything
 										works as expected.</p>
 									<p>
-										While we have a refresh button, rest assured, the an datastreams will refresh as
-										appropriate and automatically should you leave the app idle.
+										While we have a refresh button, rest assured, any data streams will refresh as
+										appropriate and automatically.
 									</p>
 								</div>
 							</div>
@@ -267,7 +267,7 @@
 							<p class="card-text">Common interfaces such as search bars, text boxes, dropdown
 								selection boxes, and buttons.</p>
 							<p class="card-text">In this app, there are several common interfaces with features
-								that you may be familar with from other app or software interactions</p>
+								that you may be familiar with from other app or software interactions</p>
 							<p class="card-text">Text boxes with character limits, dropdowns with several
 								options, list boxes with multi-select, buttons that you can press, and
 								checkboxes you can check.</p>
@@ -275,7 +275,7 @@
 							<ul>
 								<li>
 									The Search box at the top of the home view allows you to search for a question by
-									keyword. This serach will find keywords
+									keyword. This search will find keywords
 									that appear in both the question and answer text. It will automatically begin
 									searching as soon as you begin typing.
 									In order to return to the unfiltered question bank, the search bar must be blank. I
@@ -296,11 +296,11 @@
 								<li>
 									The two methods by which you can delete questions are both protected by a familiar
 									"Are you sure?" popup. That is, whether you are
-									utilizing the "Select and Batch Delete" or "Deleting a Single Question" utilites,
+									utilizing the "Select and Batch Delete" or "Deleting a Single Question" utilities,
 									you will be confronted by a popup and a big red "Yes I am sure" button. Once you
 									press
 									the big red button, you questions are deleted, forever. But that's okay, one would
-									be hardpressed
+									be hard-pressed
 									to do it by accident. And, in the case of this happening, I have my ways of getting
 									the info back ;)
 								</li>
@@ -316,8 +316,8 @@
 				<header class="docs-header">
 					<h1 class="docs-heading">Exam Generation</h1>
 					<section class="docs-intro">
-						<p>Automatic exam generation, designed to simultaeously allow the trainers to curate exams and
-							generate randome exams that are compliant with program standards <i>by design!</i></p>
+						<p>Automatic exam generation, designed to simultaneously allow the trainers to curate exams and
+							generate random exams that are compliant with program standards <i>by design!</i></p>
 					</section>
 					<!--//docs-intro-->
 				</header>
@@ -325,8 +325,8 @@
 					<h2 class="section-heading">Curated exams</h2>
 					<p>For the purposes of creating practice exams, the ability to select specific questions by hand and
 						generate an exam from that selection has been included.</p>
-					<p>More specifically, you can make a selection from the Home View using the check boxes. Next, using
-						the hamburger menu, you can slect the "Export Selected Exam" option.</p>
+					<p>More specifically, you can select from the Home View using the check boxes. Next, using
+						the hamburger menu, you can select the "Export Selected Exam" option.</p>
 					<div class="card p-2 bg-dark" style="width: 85%;">
 						<div class="card-header bg-dark">
 							<h5>The Export Selected Exam popup.</h5>
@@ -374,7 +374,7 @@
 											<ul>
 												<li>
 													Bank Size: Obviously, the exam bank is finite, and therefore the
-													results of the pseudorandom algorith can only be so random. More to
+													results of the pseudorandom algorithm can only be so random. More to
 													follow.
 												</li>
 												<li>
@@ -393,10 +393,10 @@ While (Number of questions already selected is less than the number of questions
 		Pull the question whose ID you just randomly generated:
 			if
 			(
-			This question isnt already in the exam AND 
+			This question is not already in the exam AND 
 			This question is at the chosen CET Level OR  below if more than 50% of the exam has been created AND
 			This question is the correct category if a learning objective was selected AND
-			The question wasnt used on the previous exam OR more than 50% of the exam has already been created
+			The question wasn’t used on the previous exam OR more than 50% of the exam has already been created
 			)
 			then (add the question to the exam)	
 }
@@ -408,7 +408,7 @@ While (Number of questions already selected is less than the number of questions
 											<ol>
 												<li>
 													To ensure that each exam generated (given a couple of assumptions)
-													is a requsite amount unique from any recently
+													is a requisite amount unique from any recently
 													generated exams.
 												</li>
 												<li>
@@ -426,7 +426,7 @@ While (Number of questions already selected is less than the number of questions
 												</li>
 											</ol>
 											<p>
-												The aforemention assumptions were built in to make the "recently used"
+												The aforementioned assumptions were built in to make the "recently used"
 												flag meaningful. Specifically,
 												the flag on a question will only change to a value of true when the
 												Download button is pressed.
@@ -453,7 +453,7 @@ While (Number of questions already selected is less than the number of questions
 												</li>
 											</ul>
 											<p>
-												With the design of this algorithm and these priniples in mind, the
+												With the design of this algorithm and these principles in mind, the
 												Pseudorandom exam is the preferred method of generation.
 											</p>
 										</div>
@@ -480,7 +480,7 @@ While (Number of questions already selected is less than the number of questions
 												This does rely on some other nuances. As the exam bank grows and
 												changes, the Seeded exams will change. Without a more complicated
 												seeding or hashing algorithm, I cannot prevent this <small>(though, that
-													does sound like a fun challange)</small>.
+													does sound like a fun challenge)</small>.
 												So, the true purpose of the Seeded exams is to be able to pull up a
 												"known" exam within a reasonable proximity to the last time you pulled
 												it up.
@@ -492,7 +492,7 @@ While (Number of questions already selected is less than the number of questions
 												same exam later.
 											</p>
 											<p>
-												The Seeded exams are based off of the number of desierd questions and
+												The Seeded exams are based off of the number of desired questions and
 												the number of questions in the exam bank. I did some math
 												and came up with an algorithm that will reliably generate the maximum
 												number of unique exams from those settings, and do so in a predictable
@@ -504,7 +504,7 @@ While (Number of questions already selected is less than the number of questions
 											<p>
 												Allowing you to pull up the answer key to an exam you lost, or perhaps a
 												"level playing field" practice exam, or a quiz that you particularly
-												appreciate... The training posibilties are endless.
+												appreciate... The training possibilities are endless.
 											</p>
 										</div>
 									</div>
@@ -791,7 +791,7 @@ While (Number of questions already selected is less than the number of questions
 						<p>
 							Had a particularly engaging discussing over a lunch break? Make a question about it. A big
 							discussion came up during a drill? Make a question about it.
-							You wake up from a fever dream about something that you wish EVERYONE was more familar
+							You wake up from a fever dream about something that you wish EVERYONE was more familiar
 							with?! MAKE A QUESTION ABOUT IT.
 						</p>
 						<p>
@@ -800,7 +800,7 @@ While (Number of questions already selected is less than the number of questions
 							organic exam bank and prevent stagnation.
 						</p>
 						<p style="font-size: small;">
-							In the future, I want to add a automatic approval pipeline (if desired)
+							In the future, I want to add an automatic approval pipeline (if desired)
 						</p>
 					</section>
 					<!--//docs-intro-->
@@ -833,13 +833,13 @@ While (Number of questions already selected is less than the number of questions
 						wish to come back later.
 					</p>
 					<p>
-						You can also delete the individual questions from here, if you wish. Fear not, you will be asked
+						You can also delete the individual questions from here if you wish. Fear not, you will be asked
 						a very obvious "Are You Sure?" So, lest I made a mistake, you cannot accidentally delete a
 						question.
 					</p>
 					<p>
 						Finally, you can abort back to the Home View via the Home Button. Pressing the Home Button will
-						discard any changes you have not saved and leave the question unchaged, so you dont have to
+						discard any changes you have not saved and leave the question unchanged, so you don’t have to
 						worry about making any unintentional changes.
 					</p>
 					<div class="card bg-dark" style="width:25rem;">
@@ -893,7 +893,7 @@ While (Number of questions already selected is less than the number of questions
 							</div>
 							<p class="card-text pt-3" style="color: rgb(59, 59, 59);">As you can see, this is the exact
 								same view as the Question Editor. So, nothing is new here, and it has all
-								the same rules. That is, both the question and answer are requiered before you can save
+								the same rules. That is, both the question and answer are required before you can save
 								the entry and the question field has a 255 character limit.
 							</p>
 							<p style="color: rgb(59, 59, 59);">
@@ -914,7 +914,7 @@ While (Number of questions already selected is less than the number of questions
 				<header class="docs-header">
 					<h1 class="docs-heading">Philosophy</h1>
 					<section class="docs-intro">
-						<p>I don't want to imply that this isnt a conversation that still needs to happen. I simply want
+						<p>I don't want to imply that this isn’t a conversation that still needs to happen. I simply want
 							to share my thoughts on what a training program like this
 							<i>should</i> look like.
 						</p>
@@ -932,7 +932,7 @@ While (Number of questions already selected is less than the number of questions
 						written because many lives have been lost. Some of us
 						come from the military, where rigorous training and compliance are paramount, or lives may be
 						lost. That is how I know that we all
-						understand the level of scrutiny a program like the CETTP is attempting to cultivate. So we can
+						understand the level of scrutiny a program like the CETTP is attempting to cultivate. So, we can
 						all agree that this program should uphold all of
 						us to the highest standard, especially a standard that our management can have faith in.
 					</p>
@@ -1078,7 +1078,7 @@ While (Number of questions already selected is less than the number of questions
 						ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
 						consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
 						arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
-						pede mollis pretium.</p>
+						pede mollis premium.</p>
 				</section>
 				<!--//section-->
 			</article>
