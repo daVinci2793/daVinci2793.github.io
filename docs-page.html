@@ -264,16 +264,6 @@
 							<h6>Some specific interfaces include:</h6>
 							<ul>
 								<li>
-									The Search box at the top of the Home View: This allows you to search for a question
-									by
-									keyword. This search will find keywords
-									that appear in both the question and answer text. It will automatically begin
-									searching as soon as you begin typing.
-									In order to return to the unfiltered question bank, the search bar must be blank. I
-									have included a clear button that appears whenever
-									there is text in the field.
-								</li>
-								<li>
 									The single option dropdown boxes: These dropdowns will only allow you to choose one
 									option, and these are in place in situations
 									where it would only make sense to be able to choose one option. You simply click the
@@ -297,87 +287,139 @@
 								</li>
 							</ul>
 						</div>
-			</div>
-
-			</section>
-			<!--//section-->
-			</article>
-			<!--//docs-article-->
-			<article class="docs-article" id="section-3">
-				<header>
-					<h1 class="docs-heading">Exam Generation</h1>
-					<section>
-						<p>Automatic exam generation, designed to simultaneously allow the trainers to curate exams and
-							generate random exams that are compliant with program standards <i>by design!</i></p>
 					</section>
-					<!--//docs-intro-->
-				</header>
-				<section class="docs-section" id="item-3-1">
-					<h2 class="section-heading">Curated exams</h2>
-					<p>For the purposes of creating practice exams, the ability to select specific questions by hand and
-						generate an exam from that selection has been included.</p>
-					<p>More specifically, you can select questions from the Home View using the check boxes. Next, using
-						the hamburger menu, you can select the "Export Selected Exam" option.</p>
-					<div class="card p-2 bg-dark" style="width: 85%;">
-						<div class="card-header bg-dark">
-							<h5>The Export Selected Exam popup. </h5>
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">Searching, Filtering, and Utilizing the Home View</h2>
+						<p>
+							The Home View is the primary view and home page for this app. It is the screen that appears
+							when you start the app up. It contains a list of all questions in the Question Bank,
+							Filtering and Searching interfaces, and the Drop Down menu that will take you elsewhere in
+							the app.
+						</p>
+						<ul>
+							<li>
+								<strong>The Search box allows you to search for a question
+									by
+									keyword:</strong> This search will find keywords
+								that appear in both the question and answer text. It will automatically begin
+								searching as soon as you begin typing.
+								In order to return to the unfiltered question bank, the search bar must be blank. I
+								have included a clear button that appears whenever
+								there is text in the field.
+							</li>
+							<li>
+								<strong>The Filter By CET Level combobox allows you to filter by
+									CET levels:</strong> This is a multi-select combobox, therefore, you will be able to
+								select any combination of CET levels that you desire. You press the downward facing
+								chevron to drop the choices list down and select your choices by clicking on them. You
+								choices will populate the combobox. To remove a filter, simply press on the "x" next to
+								the choice you wish to remove. If there are no choices selected, the Question Bank will
+								not be filtered.
+							</li>
+							<li>
+								<strong>The Filter By CET Learning Objective listbox allows you to filter by
+									Learning Objective:</strong> This is a multi-select listbox, so again, you will be
+								able to
+								select any combination of Learning Objectives that you desire. This time, you simply
+								select the options by which you wish to filter the Question Bank and select them again
+								to remove them from the filter criteria.
+							</li>
+							<li>
+								<strong>The Apply button allows you to apply all your selected filters:</strong> Once
+								you have selected all of your desired criteria, press the Apply button and the Question
+								Bank will be updated. To remove all your filter criteria and return to an unfiltered
+								Question Bank, press the Clear button
+							</li>
+						</ul>
+					</section>
+
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+				<article class="docs-article" id="section-3">
+					<header>
+						<h1 class="docs-heading">Exam Generation</h1>
+						<section>
+							<p>Automatic exam generation, designed to simultaneously allow the trainers to curate exams
+								and
+								generate random exams that are compliant with program standards <i>by design!</i></p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">Curated exams</h2>
+						<p>For the purposes of creating practice exams, the ability to select specific questions by hand
+							and
+							generate an exam from that selection has been included.</p>
+						<p>More specifically, you can select questions from the Home View using the check boxes. Next,
+							using
+							the hamburger menu, you can select the "Export Selected Exam" option.</p>
+						<div class="card p-2 bg-dark" style="width: 85%;">
+							<div class="card-header bg-dark">
+								<h5>The Export Selected Exam popup. </h5>
+							</div>
+							<img src="/assets/images/Export Selected.png" class="card-img-top" alt="...">
+							<!--TODO PUT CORRECT PICTURE HERE-->
+							<div class="card-body">
+								<p class="card-text" style="color:rgb(59, 59, 59)">As the name implies, this is the
+									popup
+									that appears when you press the Export Selected Exam button. Next, you will fill out
+									the file name text box with any file name that you desire and press Export. The
+									practice
+									test
+									and its answer key will then be downloaded as described below.</p>
+							</div>
 						</div>
-						<img src="/assets/images/Export Selected.png" class="card-img-top" alt="...">
-						<!--TODO PUT CORRECT PICTURE HERE-->
-						<div class="card-body">
-							<p class="card-text" style="color:rgb(59, 59, 59)">As the name implies, this is the popup
-								that appears when you press the Export Selected Exam button. Next, you will fill out
-								the file name text box with any file name that you desire and press Export. The practice
-								test
-								and its answer key will then be downloaded as described below.</p>
-						</div>
-					</div>
-					<p class="mt-4">
-						<b>Usage Tip: </b> The curated exam feature would be perfect for practice or training. This
-						feature would also be useful for upgrades in the event of an exam failure.
-					</p>
-				</section>
-				<section class="docs-section" id="item-3-2">
-					<h2 class="section-heading">The Algorithms</h2>
-					<p>There are two different automatically generated exams. I called them the Methods of Generating.
-						They are the
-						Pseudorandom and Seed method.
-					</p>
-					<div class="card bg-dark" style="width:85%;">
-						<img src="/assets/images/Methods of generating.png" class="card-img-top w-50 mx-auto p-4"
-							alt="...">
-						<div class="card-body">
-							<div class="accordion" id="accordionExample">
-								<div class="card">
-									<div class="card-header" id="headingOne">
-										<h2 class="mb-0">
-											<button class="btn btn-link btn-block text-left" type="button"
-												data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-												aria-controls="collapseOne">
-												Pseudorandom
-											</button>
-										</h2>
-									</div>
-									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-										data-parent="#accordionExample">
-										<div class="card-body">
-											The Pseudorandom method of generating provides the user
-											with as random of an exam as possible given a few constraints.
-											<ul>
-												<li>
-													Bank Size: Obviously, the exam bank is finite, and therefore the
-													results of the pseudorandom algorithm can only be so random.
-												</li>
-												<li>
-													Computers cannot be "Random": The limitations of the technology that
-													we are using is another constraint. Without venturing into
-													quantum physics, it is impossible to ask a computer to be random.
-													Hence "pseudo" random, behind the scenes is an algorithm that does
-													its best to simulate what humans generally perceive as random.
-												</li>
-											</ul>
-											<p> How it works (in general)
-												<code>
+						<p class="mt-4">
+							<b>Usage Tip: </b> The curated exam feature would be perfect for practice or training. This
+							feature would also be useful for upgrades in the event of an exam failure.
+						</p>
+					</section>
+					<section class="docs-section" id="item-3-2">
+						<h2 class="section-heading">The Algorithms</h2>
+						<p>There are two different automatically generated exams. I called them the Methods of
+							Generating.
+							They are the
+							Pseudorandom and Seed method.
+						</p>
+						<div class="card bg-dark" style="width:85%;">
+							<img src="/assets/images/Methods of generating.png" class="card-img-top w-50 mx-auto p-4"
+								alt="...">
+							<div class="card-body">
+								<div class="accordion" id="accordionExample">
+									<div class="card">
+										<div class="card-header" id="headingOne">
+											<h2 class="mb-0">
+												<button class="btn btn-link btn-block text-left" type="button"
+													data-toggle="collapse" data-target="#collapseOne"
+													aria-expanded="true" aria-controls="collapseOne">
+													Pseudorandom
+												</button>
+											</h2>
+										</div>
+										<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+											data-parent="#accordionExample">
+											<div class="card-body">
+												The Pseudorandom method of generating provides the user
+												with as random of an exam as possible given a few constraints.
+												<ul>
+													<li>
+														Bank Size: Obviously, the exam bank is finite, and therefore the
+														results of the pseudorandom algorithm can only be so random.
+													</li>
+													<li>
+														Computers cannot be "Random": The limitations of the technology
+														that
+														we are using is another constraint. Without venturing into
+														quantum physics, it is impossible to ask a computer to be
+														random.
+														Hence "pseudo" random, behind the scenes is an algorithm that
+														does
+														its best to simulate what humans generally perceive as random.
+													</li>
+												</ul>
+												<p> How it works (in general)
+													<code>
 													<pre>
 While (Number of questions already selected is less than the number of questions desired) { 
 	Generate a random number between 1 and n: 
@@ -394,716 +436,813 @@ While (Number of questions already selected is less than the number of questions
 
 <samp><i>Where n is the total number of question in the exam bank.</samp></i>
 </pre></code>
-											</p>
-											<p>Some of the reasoning behind this algorithm is as follows</p>
-											<ol>
-												<li>
-													To ensure that each exam generated (given a couple of assumptions)
-													is a requisite amount unique from any recently
-													generated exams.
-												</li>
-												<li>
-													In compliance with Microsoft guidance, the different levels of exam
-													are 50% unique from the previous level
-													by ensuring at least half the exam is at the appropriate CET level.
-												</li>
-												<li>
-													To allow the user to generate an exam filtered by Learning
-													Objective, if desired.
-												</li>
-												<li>
-													To ensure that the exam is at or below than the level of
-													certification it represents.
-												</li>
-											</ol>
-											<p>
-												The aforementioned assumptions were built in to make the "recently used"
-												flag meaningful. Specifically,
-												the flag on a question will only change to a value of true when the
-												Download button is pressed.
-												This is as opposed to every single time the generate exam button is
-												pressed.
-											</p>
-											<h6>
-												Those assumptions are all in the case of a Pseudorandom exam as the
-												recently used flag is ignored for a Seeded exam, and they are as
-												follows:
-											</h6>
-											<ul>
-												<li>
-													The user will only be pressing the Download button when they are
-													satisfied with the exam that has been generated.
-													This is why there is a preview window. It allows you to explore your
-													options.
-												</li>
-												<li>
-													That the download button will only be pressed at expected intervals.
-													That is to say, exams will be needed in a predictable way, such as
-													an individual's certification exams or biennial requalification
-													exams.
-												</li>
-											</ul>
-											<p>
-												With the design of this algorithm and these principles in mind, the
-												Pseudorandom exam is the preferred method of generation.
-											</p>
+												</p>
+												<p>Some of the reasoning behind this algorithm is as follows</p>
+												<ol>
+													<li>
+														To ensure that each exam generated (given a couple of
+														assumptions)
+														is a requisite amount unique from any recently
+														generated exams.
+													</li>
+													<li>
+														In compliance with Microsoft guidance, the different levels of
+														exam
+														are 50% unique from the previous level
+														by ensuring at least half the exam is at the appropriate CET
+														level.
+													</li>
+													<li>
+														To allow the user to generate an exam filtered by Learning
+														Objective, if desired.
+													</li>
+													<li>
+														To ensure that the exam is at or below than the level of
+														certification it represents.
+													</li>
+												</ol>
+												<p>
+													The aforementioned assumptions were built in to make the "recently
+													used"
+													flag meaningful. Specifically,
+													the flag on a question will only change to a value of true when the
+													Download button is pressed.
+													This is as opposed to every single time the generate exam button is
+													pressed.
+												</p>
+												<h6>
+													Those assumptions are all in the case of a Pseudorandom exam as the
+													recently used flag is ignored for a Seeded exam, and they are as
+													follows:
+												</h6>
+												<ul>
+													<li>
+														The user will only be pressing the Download button when they are
+														satisfied with the exam that has been generated.
+														This is why there is a preview window. It allows you to explore
+														your
+														options.
+													</li>
+													<li>
+														That the download button will only be pressed at expected
+														intervals.
+														That is to say, exams will be needed in a predictable way, such
+														as
+														an individual's certification exams or biennial requalification
+														exams.
+													</li>
+												</ul>
+												<p>
+													With the design of this algorithm and these principles in mind, the
+													Pseudorandom exam is the preferred method of generation.
+												</p>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="card">
-									<div class="card-header" id="headingTwo">
-										<h2 class="mb-0">
-											<button class="btn btn-link btn-block text-left" type="button"
-												data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-												aria-controls="collapseTwo">
-												Seed
-											</button>
-										</h2>
-									</div>
-									<div id="collapseTwo" class="collapse show" aria-labelledby="headingOne"
-										data-parent="#accordionExample">
-										<div class="card-body">
-											<p>The Seeded exam is much more simple, much less random, and designed such
-												that given the same number of questions, same CET Level, and same
-												Learning Objectives
-												the exam will be the same.</p>
-											<p>
-												This does rely on some other nuances. As the exam bank grows and
-												changes, the Seeded exams will change. Without a more complicated
-												seeding or hashing algorithm, I cannot prevent this <small>(though, that
-													does sound like a fun challenge)</small>.
-												So, the true purpose of the Seeded exams is to be able to pull up a
-												"known" exam within a reasonable proximity to the last time you pulled
-												it up.
-											</p>
-											<p>
-												It is for this reason that the Answer Key that is generated along side
-												the Seeded exams provides you with the "Exam Details," thereby allowing
-												you to pull up the
-												same exam later.
-											</p>
-											<p>
-												The Seeded exams are based off of the number of desired questions and
-												the number of questions in the exam bank. I did some math
-												and came up with an algorithm that will reliably generate the maximum
-												number of unique exams from those settings, and do so in a predictable
-												way (given the above assumptions.)
-											</p>
-											<h5>
-												Et Voila, you have exams that can be recalled based on some settings.
-											</h5>
-											<p>
-												Allowing you to pull up the answer key to an exam you lost, or perhaps a
-												"level playing field" practice exam, or a quiz that you particularly
-												appreciate... The training possibilities are endless.
-											</p>
+									<div class="card">
+										<div class="card-header" id="headingTwo">
+											<h2 class="mb-0">
+												<button class="btn btn-link btn-block text-left" type="button"
+													data-toggle="collapse" data-target="#collapseTwo"
+													aria-expanded="true" aria-controls="collapseTwo">
+													Seed
+												</button>
+											</h2>
+										</div>
+										<div id="collapseTwo" class="collapse show" aria-labelledby="headingOne"
+											data-parent="#accordionExample">
+											<div class="card-body">
+												<p>The Seeded exam is much more simple, much less random, and designed
+													such
+													that given the same number of questions, same CET Level, and same
+													Learning Objectives
+													the exam will be the same.</p>
+												<p>
+													This does rely on some other nuances. As the exam bank grows and
+													changes, the Seeded exams will change. Without a more complicated
+													seeding or hashing algorithm, I cannot prevent this <small>(though,
+														that
+														does sound like a fun challenge)</small>.
+													So, the true purpose of the Seeded exams is to be able to pull up a
+													"known" exam within a reasonable proximity to the last time you
+													pulled
+													it up.
+												</p>
+												<p>
+													It is for this reason that the Answer Key that is generated along
+													side
+													the Seeded exams provides you with the "Exam Details," thereby
+													allowing
+													you to pull up the
+													same exam later.
+												</p>
+												<p>
+													The Seeded exams are based off of the number of desired questions
+													and
+													the number of questions in the exam bank. I did some math
+													and came up with an algorithm that will reliably generate the
+													maximum
+													number of unique exams from those settings, and do so in a
+													predictable
+													way (given the above assumptions.)
+												</p>
+												<h5>
+													Et Voila, you have exams that can be recalled based on some
+													settings.
+												</h5>
+												<p>
+													Allowing you to pull up the answer key to an exam you lost, or
+													perhaps a
+													"level playing field" practice exam, or a quiz that you particularly
+													appreciate... The training possibilities are endless.
+												</p>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</section>
-				<section class="docs-section" id="item-3-3">
-					<h2 class="section-heading">The Output</h2>
-					<p>One could argue that this is the meat and potatoes of the Exam Generation function, so, I will go
-						through step-by-step how to get a physical exam in your hand.</p>
-					<div class="card" style="width:85%;">
-						<div class="card-body">
-							<div class="row">
-								<div class="col-md-auto">
-									<div class="list-group" id="list-tab" role="tablist">
-										<a class="list-group-item list-group-item-action active" id="list-step1-list"
-											data-toggle="list" href="#list-step1" role="tab" aria-controls="step1">Step
-											1</a>
-										<a class="list-group-item list-group-item-action" id="list-step2-list"
-											data-toggle="list" href="#list-step2" role="tab" aria-controls="step2">Step
-											2</a>
-										<a class="list-group-item list-group-item-action" id="list-step3-list"
-											data-toggle="list" href="#list-step3" role="tab" aria-controls="step3">Step
-											3</a>
-										<a class="list-group-item list-group-item-action" id="list-step4-list"
-											data-toggle="list" href="#list-step4" role="tab" aria-controls="step4">Step
-											4</a>
-										<a class="list-group-item list-group-item-action" id="list-step5-list"
-											data-toggle="list" href="#list-step5" role="tab" aria-controls="step5">Step
-											5</a>
+					</section>
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">The Output</h2>
+						<p>One could argue that this is the meat and potatoes of the Exam Generation function, so, I
+							will go
+							through step-by-step how to get a physical exam in your hand.</p>
+						<div class="card" style="width:85%;">
+							<div class="card-body">
+								<div class="row">
+									<div class="col-md-auto">
+										<div class="list-group" id="list-tab" role="tablist">
+											<a class="list-group-item list-group-item-action active"
+												id="list-step1-list" data-toggle="list" href="#list-step1" role="tab"
+												aria-controls="step1">Step
+												1</a>
+											<a class="list-group-item list-group-item-action" id="list-step2-list"
+												data-toggle="list" href="#list-step2" role="tab"
+												aria-controls="step2">Step
+												2</a>
+											<a class="list-group-item list-group-item-action" id="list-step3-list"
+												data-toggle="list" href="#list-step3" role="tab"
+												aria-controls="step3">Step
+												3</a>
+											<a class="list-group-item list-group-item-action" id="list-step4-list"
+												data-toggle="list" href="#list-step4" role="tab"
+												aria-controls="step4">Step
+												4</a>
+											<a class="list-group-item list-group-item-action" id="list-step5-list"
+												data-toggle="list" href="#list-step5" role="tab"
+												aria-controls="step5">Step
+												5</a>
+										</div>
 									</div>
-								</div>
-								<div class="col-md">
-									<div class="tab-content" id="nav-tabContent">
-										<div class="tab-pane fade show active" id="list-step1" role="tabpanel"
-											aria-labelledby="list-step1-list">As always, you will start off at the
-											<button type="button" class="btn btn-dark btn-sm" data-toggle="modal"
-												data-target="#Modal1">
-												Home View
-											</button>
-											<div class="modal fade" id="Modal1" tabindex="-1"
-												aria-labelledby="exampleModalLabel" aria-hidden="true">
-												<div class="modal-dialog modal-dialog-centered modal-xl">
-													<div class="modal-content">
-														<div class="modal-header">
-															<h5 class="modal-title" id="exampleModalLabel">The Home View
-															</h5>
-															<button type="button" class="close" data-dismiss="modal"
-																aria-label="Close">
-																<span aria-hidden="true">&times;</span>
-															</button>
-														</div>
-														<div class="modal-body">
-															<img src="/assets/images/Home View.png" alt=""
-																style="width: 100%;height: 100%;">
+									<div class="col-md">
+										<div class="tab-content" id="nav-tabContent">
+											<div class="tab-pane fade show active" id="list-step1" role="tabpanel"
+												aria-labelledby="list-step1-list">As always, you will start off at the
+												<button type="button" class="btn btn-dark btn-sm" data-toggle="modal"
+													data-target="#Modal1">
+													Home View
+												</button>
+												<div class="modal fade" id="Modal1" tabindex="-1"
+													aria-labelledby="exampleModalLabel" aria-hidden="true">
+													<div class="modal-dialog modal-dialog-centered modal-xl">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="exampleModalLabel">The Home
+																	View
+																</h5>
+																<button type="button" class="close" data-dismiss="modal"
+																	aria-label="Close">
+																	<span aria-hidden="true">&times;</span>
+																</button>
+															</div>
+															<div class="modal-body">
+																<img src="/assets/images/Home View.png" alt=""
+																	style="width: 100%;height: 100%;">
+															</div>
 														</div>
 													</div>
 												</div>
+												<p class="pt-3">
+													From the Home View, you will press the Hamburger Menu and select
+													"Generate Exam" in
+													the upper right-hand corner.
+												</p>
+												<p>
+													This will take you to the Exam Designer.
+												</p>
 											</div>
-											<p class="pt-3">
-												From the Home View, you will press the Hamburger Menu and select
-												"Generate Exam" in
-												the upper right-hand corner.
-											</p>
-											<p>
-												This will take you to the Exam Designer.
-											</p>
-										</div>
-										<div class="tab-pane fade" id="list-step2" role="tabpanel"
-											aria-labelledby="list-step2-list">
-											<button type="button" class="btn btn-dark btn-sm" data-toggle="modal"
-												data-target="#Modal2">
-												The Exam Designer
-											</button>
-											<div class="modal fade" id="Modal2" tabindex="-1"
-												aria-labelledby="exampleModalLabel" aria-hidden="true">
-												<div class="modal-dialog modal-dialog-centered modal-xl">
-													<div class="modal-content">
-														<div class="modal-header">
-															<h5 class="modal-title" id="exampleModalLabel">The Exam
-																Designer
-															</h5>
-															<button type="button" class="close" data-dismiss="modal"
-																aria-label="Close">
-																<span aria-hidden="true">&times;</span>
-															</button>
-														</div>
-														<div class="modal-body">
-															<img src="/assets/images/Exam Designer.png" alt=""
-																style="width: 100%;height: 100%;">
-														</div>
-													</div>
-												</div>
-											</div>
-											page has several interfaces. We will be creating a Pseudorandom exam.
-											<p class="pt-3">
-												To do so you must first select Pseudorandom in the Method of Generating
-												dropdown box. Then you will choose your desired number of questions.
-											</p>
-											<p style="font-size: small;color: rgb(136, 70, 180);">
-												The Number of Questions text box defaults to 30 and will only allow you
-												to enter as many questions as there are total in the bank.
-											</p>
-											<p>
-												Next, you will select the desired CET Level, which in the case of a
-												Pseudorandom exam will
-												ensure that the first half of the exam is <strong>AT</strong> the chosen
-												level and the
-												second half is at or below the chosen level.
-											</p>
-											<p>
-												Finally, you will choose any Learning Objective filters that you desire.
-												This is a multi-select list box and will allow you to
-												choose as many choices as you see fit. The resulting exam will consist
-												only of questions with one of the selected learning objectives.
-												When there are no selections made, the exam will not be filtered at all.
-											</p>
-										</div>
-										<div class="tab-pane fade" id="list-step3" role="tabpanel"
-											aria-labelledby="list-step3-list">
-											<p>Now you get to press the Generate Exam button.</p>
-											<p>
-												You can press it as many times as you would like, each time it will run
-												through the aforementioned algorithm and generate a unique exam.
-												The right-hand side of the screen is a preview of the exam. Allowing you
-												to verify that you are satisfied with the
-												randomly generated result.
-											</p>
-											<p>
-												If it becomes necessary for you to change any of the settings, you can
-												do that as well. Pressing the Generated Exam button simply
-												readies the exam for download.
-											</p>
-										</div>
-										<div class="tab-pane fade" id="list-step4" role="tabpanel"
-											aria-labelledby="list-step4-list">
-											<p>
-												Once you are satisfied with your generated exam, you simply fill out the
-												File Name text field with whatever you want and press the Download icon.
-											</p>
-											<p>
-												Once pressed, there will be no immediate indication of success or
-												failure (which is something I will probably change in the future).
-												But rest assured, it <small>probably</small> worked.
-											</p>
-											<p>
-												Once pressed, the exam will download to a file on your computer called
-												Exam Downloads. If it does not already exist, it will be
-												created and it will be placed on your Desktop.
-											</p>
-											<p>
-												Added to that folder will be two files:
-											</p>
-											<ul>
-												<li>
-													fileName: the exam you just generated with all the CP1 formatting
-													that we are used to.
-												</li>
-												<li>
-													fileName-Answer-Key: the answer key to said exam.
-												</li>
-											</ul>
-											<button type="button" class="btn btn-dark btn-sm" data-toggle="modal"
-												data-target="#Modal3">
-												This is what you will see.
-											</button>
-											<div class="modal fade" id="Modal3" tabindex="-1"
-												aria-labelledby="exampleModalLabel" aria-hidden="true">
-												<div class="modal-dialog modal-dialog-centered modal-xl">
-													<div class="modal-content">
-														<div class="modal-header">
-															<h5 class="modal-title" id="exampleModalLabel">The Exam
-																Downloads Folder.
-															</h5>
-															<button type="button" class="close" data-dismiss="modal"
-																aria-label="Close">
-																<span aria-hidden="true">&times;</span>
-															</button>
-														</div>
-														<div class="modal-body">
-															<img src="/assets/images/Exam Download.png" alt=""
-																style="width: 100%;height: 100%;">
+											<div class="tab-pane fade" id="list-step2" role="tabpanel"
+												aria-labelledby="list-step2-list">
+												<button type="button" class="btn btn-dark btn-sm" data-toggle="modal"
+													data-target="#Modal2">
+													The Exam Designer
+												</button>
+												<div class="modal fade" id="Modal2" tabindex="-1"
+													aria-labelledby="exampleModalLabel" aria-hidden="true">
+													<div class="modal-dialog modal-dialog-centered modal-xl">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="exampleModalLabel">The Exam
+																	Designer
+																</h5>
+																<button type="button" class="close" data-dismiss="modal"
+																	aria-label="Close">
+																	<span aria-hidden="true">&times;</span>
+																</button>
+															</div>
+															<div class="modal-body">
+																<img src="/assets/images/Exam Designer.png" alt=""
+																	style="width: 100%;height: 100%;">
+															</div>
 														</div>
 													</div>
 												</div>
+												page has several interfaces. We will be creating a Pseudorandom exam.
+												<p class="pt-3">
+													To do so you must first select Pseudorandom in the Method of
+													Generating
+													dropdown box. Then you will choose your desired number of questions.
+												</p>
+												<p style="font-size: small;color: rgb(136, 70, 180);">
+													The Number of Questions text box defaults to 30 and will only allow
+													you
+													to enter as many questions as there are total in the bank.
+												</p>
+												<p>
+													Next, you will select the desired CET Level, which in the case of a
+													Pseudorandom exam will
+													ensure that the first half of the exam is <strong>AT</strong> the
+													chosen
+													level and the
+													second half is at or below the chosen level.
+												</p>
+												<p>
+													Finally, you will choose any Learning Objective filters that you
+													desire.
+													This is a multi-select list box and will allow you to
+													choose as many choices as you see fit. The resulting exam will
+													consist
+													only of questions with one of the selected learning objectives.
+													When there are no selections made, the exam will not be filtered at
+													all.
+												</p>
 											</div>
-											<p class="pt-3">
-												Do not be alarmed by the unfamiliar file type. I will explain
-												everything.
-											</p>
-										</div>
-										<div class="tab-pane fade" id="list-step5" role="tabpanel"
-											aria-labelledby="list-step5-list">
-											<p>
-												The unfamiliar file type you see here is an HTML file. This is because
-												we have exported the exam as a custom made HTML file. This approach was
-												<strong>MUCH</strong> more effective than anything else I tried. It
-												prevents the weird formatting nuances of automatically converting it to
-												a PDF (which I tried.)
-											</p>
-											<p>
-												You should be able to simply double click the file. The file will open
-												in
-												your default browser.
-												For compatability reasons this works best in Microsoft Edge, if Edge is
-												not your default you have to right click on the html file, select Open
-												with, and choose Edge.
-											</p>
-											<p>
-												Once it is open in Edge, you can print it the way you would anything.
-												Hopefully, the super-easy-to-use print preview window
-												will appear allowing you to finely control the final output. Though, I
-												have designed it in such a way that with all the defaults you do not
-												have to change anything.
-												Even with the margins set to something other than the defaults, your
-												output should be normal looking.
-											</p>
-											<p>
-												Once you have printed it out the way you would anything else, you have
-												the exam in your hand and all you had to do was press a few buttons.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!--//section-->
-			</article>
-			<!--//docs-article-->
-
-			<article class="docs-article" id="section-4">
-				<header>
-					<h1 class="docs-heading">Weekly Quiz</h1>
-					<section>
-						<p>A periodic, random quiz that can be sent out to the whole team with the click of a button.
-						</p>
-					</section>
-					<!--//docs-intro-->
-				</header>
-				<section class="docs-section" id="item-4-1">
-					<h2 class="section-heading">This is what the Send Weekly Quiz option does.</h2>
-					<p>In the spirit of periodically brushing up on questions (see history lesson in the Philosophy
-						Section), I have included the ability to send out
-						what I am calling the Weekly Quiz</p>
-					<p>
-					<div class="card bg-dark" style="width:min-content;">
-						<img src="/assets/images/Hamburger.png" class="card-img-top p-3" alt="..."
-							style="width:max-content;">
-						<div class="card-body">
-							<p class="card-text" style="color:rgb(59, 59, 59)">From the Home View, you will drop
-								down the Hamburger Menu. From there you will simply select the Send Weekly Quiz
-								option.</p>
-						</div>
-					</div>
-					</p>
-					<h6 class="pb-2">
-						Simple, huh?
-					</h6>
-					<p>
-						In beta, this only sends an email to yourself (so you can test it out). When fully implemented,
-						it can be made to send an email to
-						the CP1 alias. That email will consist of one or two randomly selected questions from the bank.
-					</p>
-					<p>
-						At the moment, it simply suggests that each shift should discuss it amongst themselves and send
-						the answer to the training coordinators.
-						However, I am certainly open to suggestions for what that email should say and how it should be
-						handled. Once again, I can
-						implement almost anything you can dream up, and would love to do so.
-					</p>
-				</section>
-				<!--//section-->
-			</article>
-			<!--//docs-article-->
-
-			<article class="docs-article" id="section-5">
-				<header>
-					<h1 class="docs-heading">Question Editor</h1>
-					<section>
-						<p>The ability to make rapid, straight-forward changes to the exam bank. Promoting regular
-							management and updating. No clunky SharePoint interface to stifle your creative urges.
-						</p>
-						<p>
-							Had a particularly engaging discussing over a lunch break? Make a question about it. A big
-							discussion came up during a drill? Make a question about it.
-							You wake up from a fever dream about something that you wish EVERYONE was more familiar
-							with?! MAKE A QUESTION ABOUT IT.
-						</p>
-						<p>
-							The goal of this app is to make editing, updating, adding, and deleting questions so
-							seamless that you <strong>WANT</strong> to do it. Which will hopefully promote a more
-							organic exam bank and prevent stagnation.
-						</p>
-						<p style="font-size: small;">
-							In the future, I want to add an automatic approval pipeline (if desired)
-						</p>
-					</section>
-					<!--//docs-intro-->
-				</header>
-				<section class="docs-section" id="item-5-1">
-					<h2 class="section-heading">Making Changes to Existing Questions</h2>
-					<p>First and foremost, this app is about database management made simple. The Home View should clue
-						you in to this, as, the most apparent thing you can do is scroll through
-						the entire bank.</p>
-					<p>
-						From here you are free to search through and review all the questions and answers in the exam
-						bank. You are also able to edit the details of each question.
-					</p>
-					<div class="card p-2 bg-dark" style="width: 85%;">
-						<div class="card-header bg-dark">
-							<h5>You can do this via the Question Editor</h5>
-						</div>
-						<img src="/assets/images/Question Editor.png" class="card-img-top" alt="...">
-						<div class="card-body">
-							<p class="card-text" style="color:rgb(59, 59, 59)">You get here by pressing the right facing
-								chevron on the Home View. For the
-								question you wish to edit, of course.</p>
-						</div>
-					</div>
-					<p class="pt-3">
-						From here, you can edit the question, the CET Level, the Learning Objective, and the Answer. As
-						a reminder, the question text field will only allow you
-						up to 255 Characters, you will get a warning otherwise. Additionally, the Question and Answer
-						fields are required, so you at least have to put a placeholder if you
-						wish to come back later.
-					</p>
-					<p>
-						You can also delete the individual questions from here if you wish. Fear not, you will be asked
-						a very obvious "Are You Sure?" So, lest I made a mistake, you cannot accidentally delete a
-						question.
-					</p>
-					<p>
-						Finally, you can abort back to the Home View via the Cancel Button. Pressing the Cancel Button will
-						discard any changes you have not saved and leave the question unchanged, so you don’t have to
-						worry about making any unintentional changes.
-					</p>
-					<div class="card bg-dark" style="width:25rem;">
-						<div class="card-header bg-dark p-1" style="text-align: center;">
-							<p class="m-0" style="font-size: small;">Just a thought</p>
-						</div>
-						<div class="card-body">
-							<p style="font-size: small;color: rgb(59, 59, 59);">
-								In the future I would like to add an option for grading exams and tracking question
-								statistics.
-								The trackable metrics and deliverables will probably be accessible via this page. Make
-								sure to tell me if this
-								is something you are interested in.
-							</p>
-						</div>
-					</div>
-				</section>
-				<section class="docs-section" id="item-5-2">
-					<h2 class="section-heading">Adding New Questions</h2>
-					<p>Another Major Feature is the ability to add new questions to the database. As with editing, this
-						is intended to be as
-						straight-forward as I could make it.
-					</p>
-					<div class="card bg-dark" style="width:85%;">
-						<h5 class="card-header" st>You get here by pressing the Add New button at the bottom of the Home
-							View</h5>
-						<div class="card-body">
-							<div id="carousel2" class="carousel slide" data-ride="carousel">
-								<ol class="carousel-indicators">
-									<li data-target="#carousel2" data-slide-to="0" class="active"></li>
-									<li data-target="#carousel2" data-slide-to="1"></li>
-								</ol>
-								<div class="carousel-inner" role="listbox">
-									<div class="carousel-item active " data-interval="10000">
-										<img src="/assets/images/Add New no text.png" alt="First slide"
-											style="width: 100%;">
-									</div>
-									<div class="carousel-item" data-interval="10000">
-										<img src="/assets/images/Add New with text.png" alt="Second slide"
-											style="width: 100%;">
-									</div>
-								</div>
-								<a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								</a>
-							</div>
-							<p class="card-text pt-3" style="color: rgb(59, 59, 59);">As you can see, this is the exact
-								same view as the Question Editor. So, nothing is new here, and it has all
-								the same rules. That is, both the question and answer are required before you can save
-								the entry and the question field has a 255 character limit.
-							</p>
-							<p style="color: rgb(59, 59, 59);">
-								You may also notice that the save button is, in fact, disabled before you have entered
-								something into the Question and Answer field. This is for database integrity reasons,
-								so, more
-								to save <i>MY</i> hairline than it is to protect you.
-							</p>
-						</div>
-					</div>
-				</section>
-				<!--//section-->
-			</article>
-			<!--//docs-article-->
-
-
-			<article class="docs-article" id="section-6">
-				<header>
-					<h1 class="docs-heading">Philosophy</h1>
-					<section>
-						<p>I don't want to imply that this isn’t a conversation that still needs to happen. I simply
-							want
-							to share my thoughts on what a training program like this
-							<i>should</i> look like.
-						</p>
-					</section>
-					<!--//docs-intro-->
-				</header>
-				<section class="docs-section" id="item-6-1">
-					<h2 class="section-heading">The Principles</h2>
-					<p>
-						It goes without saying that no training program was ever designed to NOT provide a reasonable
-						level of certainty in an individual's skill level.
-					</p>
-					<p>
-						Some of us come from an industry in which the codes and credentialing are airtight, often
-						written because many lives have been lost. Some of us
-						come from the military, where rigorous training and compliance are paramount, or lives may be
-						lost. That is how I know that we all
-						understand the level of scrutiny a program like the CETTP is attempting to cultivate. So, we can
-						all agree that this program should uphold all of
-						us to the highest standard, especially a standard that our management can have faith in.
-					</p>
-					<p>
-						That is why I believe that we should hone the CET Training Program to reflect these beliefs. I
-						believe that starts with the Question Bank, which is exactly why I
-						spent a month creating this app and all the associated framework.
-					</p>
-					<p>
-						The Microsoft standard suggests that the exam bank should have a minimum of 100 questions and
-						those questions should be periodically updated.
-						The Question Editor and Add New Question features are designed to make this as simple as
-						possible, and though I made a joke out of it in the earlier section,
-						I believe we can take this one step further. Any time a training coordinator learns something
-						new or an intense discussion during quals or a drill come up, it
-						should be our standard practice to put that piece of information into circulation. This is the
-						first principle that I think we should adopt. The desire to
-						constantly improve our understanding and level of expertise.
-					</p>
-					<p>
-						The second principle is the logical successor to the first principle. We need to squash the
-						tribal aspect of our knowledge. I have not been here for
-						very long but the number of times I have heard the sentences "this is how we have always done
-						it"
-						or "I don’t think that is a very good idea" or "if
-						we change it too many people will get confused" is too high. We need to adopt a growth mindset
-						and ensure that any new or old knowledge is
-						vetted and approved by the appropriate body of knowledge. Be it the documentation or the powers
-						that be. That starts with updating and backing
-						up all of our current knowledge with proof and (if possible) testing.
-					</p>
-					<p>
-						Another major paradigm shift that I believe would be beneficial is to hold ourselves to a much
-						higher standard.
-						We do not have the person-power to have the command and qualification hierarchy of larger
-						facilities, and I
-						am not even implying that we should have one. I do not bring this topic up because I want to
-						bring people down,
-						but because I want to bring everyone UP. If we are going to accept and adopt the intention
-						behind Microsoft's
-						data-driven, open-book policy then we should do our best to meet the intent rather than succumb
-						to it.
-						I suggest that we do this by limiting the resources that we can use during the test to
-						what
-						we would be
-						okay with using during a procedure or a break-fix. We wouldn't rely on written notes or CET
-						Study guides during
-						a UPS failure, so why would we use them during the test. Furthermore, I believe that the
-						standard by which the
-						questions are written should also be higher. Not that they should take so long that you don't
-						have time to think,
-						or that they should be so difficult that you couldn't possibly know them without looking it up,
-						but
-						that they should be
-						challenging enough
-						to make us think and, if we don’t know the answer, know where to look it up. That being said,
-						instead of
-						fearing a more challenging exam, we should be constantly preparing for the exam. That way, we
-						can be sure
-						that those that succeed are well qualified, and those that fail can be helped in a meaningful
-						way. That is
-						why I included the Weekly Quiz feature.
-					</p>
-					<p>
-						That is all I have to say about that, and if you outright disagree with my thought process, I
-						would love to
-						hear your take on it all. If we all work together and combine our vastly different experiences
-						and skillsets,
-						the whole team will be better for it. And not just us, but our replacements.
-					</p>
-					<button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#Modal4">
-						Just a small history lesson
-					</button>
-					<div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel"
-						aria-hidden="true">
-						<div class="modal-dialog modal-dialog-centered modal-xl">
-							<div class="modal-content">
-								<div class="modal-header bg-dark">
-									<h5 class="modal-title" id="exampleModalLabel">Ebbinghaus and His Forgetting Curve
-									</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
-								</div>
-								<div class="modal-body mx-auto bg-dark">
-									<div class="row">
-										<div class="col-md">
-											<div class="card" style="height:100%;">
-												<div class="card-body">
-													<img src="https://practicalpie.com/wp-content/uploads/2020/04/ebbinghaus-forgetting-curve.png"
-														alt="" style="width: 100%;">
+											<div class="tab-pane fade" id="list-step3" role="tabpanel"
+												aria-labelledby="list-step3-list">
+												<p>Now you get to press the Generate Exam button.</p>
+												<p>
+													You can press it as many times as you would like, each time it will
+													run
+													through the aforementioned algorithm and generate a unique exam.
+													The right-hand side of the screen is a preview of the exam. Allowing
+													you
+													to verify that you are satisfied with the
+													randomly generated result.
+												</p>
+												<p>
+													If it becomes necessary for you to change any of the settings, you
+													can
+													do that as well. Pressing the Generated Exam button simply
+													readies the exam for download.
+												</p>
+											</div>
+											<div class="tab-pane fade" id="list-step4" role="tabpanel"
+												aria-labelledby="list-step4-list">
+												<p>
+													Once you are satisfied with your generated exam, you simply fill out
+													the
+													File Name text field with whatever you want and press the Download
+													icon.
+												</p>
+												<p>
+													Once pressed, there will be no immediate indication of success or
+													failure (which is something I will probably change in the future).
+													But rest assured, it <small>probably</small> worked.
+												</p>
+												<p>
+													Once pressed, the exam will download to a file on your computer
+													called
+													Exam Downloads. If it does not already exist, it will be
+													created and it will be placed on your Desktop.
+												</p>
+												<p>
+													Added to that folder will be two files:
+												</p>
+												<ul>
+													<li>
+														fileName: the exam you just generated with all the CP1
+														formatting
+														that we are used to.
+													</li>
+													<li>
+														fileName-Answer-Key: the answer key to said exam.
+													</li>
+												</ul>
+												<button type="button" class="btn btn-dark btn-sm" data-toggle="modal"
+													data-target="#Modal3">
+													This is what you will see.
+												</button>
+												<div class="modal fade" id="Modal3" tabindex="-1"
+													aria-labelledby="exampleModalLabel" aria-hidden="true">
+													<div class="modal-dialog modal-dialog-centered modal-xl">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="exampleModalLabel">The Exam
+																	Downloads Folder.
+																</h5>
+																<button type="button" class="close" data-dismiss="modal"
+																	aria-label="Close">
+																	<span aria-hidden="true">&times;</span>
+																</button>
+															</div>
+															<div class="modal-body">
+																<img src="/assets/images/Exam Download.png" alt=""
+																	style="width: 100%;height: 100%;">
+															</div>
+														</div>
+													</div>
 												</div>
+												<p class="pt-3">
+													Do not be alarmed by the unfamiliar file type. I will explain
+													everything.
+												</p>
 											</div>
-										</div>
-										<div class="col-md">
-											<div class="card" style="height:100%;">
-												<div class="card-body">
-													<img src="https://practicalpie.com/wp-content/uploads/2020/04/spaced-learning-retention-curves.png"
-														alt="" style="width: 100%;">
-												</div>
+											<div class="tab-pane fade" id="list-step5" role="tabpanel"
+												aria-labelledby="list-step5-list">
+												<p>
+													The unfamiliar file type you see here is an HTML file. This is
+													because
+													we have exported the exam as a custom made HTML file. This approach
+													was
+													<strong>MUCH</strong> more effective than anything else I tried. It
+													prevents the weird formatting nuances of automatically converting it
+													to
+													a PDF (which I tried.)
+												</p>
+												<p>
+													You should be able to simply double click the file. The file will
+													open
+													in
+													your default browser.
+													For compatability reasons this works best in Microsoft Edge, if Edge
+													is
+													not your default you have to right click on the html file, select
+													Open
+													with, and choose Edge.
+												</p>
+												<p>
+													Once it is open in Edge, you can print it the way you would
+													anything.
+													Hopefully, the super-easy-to-use print preview window
+													will appear allowing you to finely control the final output. Though,
+													I
+													have designed it in such a way that with all the defaults you do not
+													have to change anything.
+													Even with the margins set to something other than the defaults, your
+													output should be normal looking.
+												</p>
+												<p>
+													Once you have printed it out the way you would anything else, you
+													have
+													the exam in your hand and all you had to do was press a few buttons.
+												</p>
 											</div>
-										</div>
-									</div>
-								</div>
-								<div class="modal-footer bg-dark" style="color: rgb(59, 59, 59);">
-									<p>The Ebbinghaus forgetting curve is a graphical representation of the forgetting
-										process. The curve demonstrates the declining rate at which information is lost
-										if
-										no particular effort is made to remember it.</p>
-
-									<p>The forgetting curve was defined in 1885 by German psychologist Hermann
-										Ebbinghaus
-										(1850-1909) in his book Memory: A Contribution to Experimental Psychology. He
-										was
-										the first psychologist who systematically studied memory and learning.
-										Ebbinghaus
-										recorded his findings mathematically in an attempt to discover patterns of
-										forgetting and memory retention.</p>
-									<div class="card bg-secondary">
-										<div class="card-body" style="color:#f0f0f0;">
-											But as you can see, it is a natural and well-studied phenomenon. As such it
-											should be
-											treated like any other optimization problem that we encounter on a daily
-											basis. The maths
-											behind memory management are defined and we would be remiss to not take
-											advantage of that.
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-
-
-
-				</section>
-				<!--//section-->
-
-			</article>
-			<!--//docs-article-->
-
-			<article class="docs-article" id="section-7">
-				<header">
-					<h1 class="docs-heading">FAQs</h1>
-					<section>
-						<p>I wont have any frequently asked questions until questions are asked frequently. So, this is
-							under construction.</p>
-					</section>
-					<!--//docs-intro-->
-					</header>
-					<section class="docs-section" id="item-7-1">
-						<h2 class="section-heading">Section Item 7.1 <small>(FAQ Category One)</small></h2>
-						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>What's sit amet quam eget lacinia?
-						</h5>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-							Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-							ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-							consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-							arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
-							pede mollis premium.</p>
 					</section>
 					<!--//section-->
-			</article>
-			<!--//docs-article-->
+				</article>
+				<!--//docs-article-->
 
-			<footer class="footer">
-				<div class="text-center py-4">
-					<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-					<small class="copyright">Designed by <a class="theme-link" href="http://themes.3rdwavemedia.com"
-							target="_blank">Xiaoying Riley</a> for
-						developers</small>
-					<p><small>Implemented by Tyler Berube on behalf of the CP1 CE Team</small></p>
-				</div>
-			</footer>
+				<article class="docs-article" id="section-4">
+					<header>
+						<h1 class="docs-heading">Weekly Quiz</h1>
+						<section>
+							<p>A periodic, random quiz that can be sent out to the whole team with the click of a
+								button.
+							</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">This is what the Send Weekly Quiz option does.</h2>
+						<p>In the spirit of periodically brushing up on questions (see history lesson in the Philosophy
+							Section), I have included the ability to send out
+							what I am calling the Weekly Quiz</p>
+						<p>
+						<div class="card bg-dark" style="width:min-content;">
+							<img src="/assets/images/Hamburger.png" class="card-img-top p-3" alt="..."
+								style="width:max-content;">
+							<div class="card-body">
+								<p class="card-text" style="color:rgb(59, 59, 59)">From the Home View, you will drop
+									down the Hamburger Menu. From there you will simply select the Send Weekly Quiz
+									option.</p>
+							</div>
+						</div>
+						</p>
+						<h6 class="pb-2">
+							Simple, huh?
+						</h6>
+						<p>
+							In beta, this only sends an email to yourself (so you can test it out). When fully
+							implemented,
+							it can be made to send an email to
+							the CP1 alias. That email will consist of one or two randomly selected questions from the
+							bank.
+						</p>
+						<p>
+							At the moment, it simply suggests that each shift should discuss it amongst themselves and
+							send
+							the answer to the training coordinators.
+							However, I am certainly open to suggestions for what that email should say and how it should
+							be
+							handled. Once again, I can
+							implement almost anything you can dream up, and would love to do so.
+						</p>
+					</section>
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="section-5">
+					<header>
+						<h1 class="docs-heading">Question Editor</h1>
+						<section>
+							<p>The ability to make rapid, straight-forward changes to the exam bank. Promoting regular
+								management and updating. No clunky SharePoint interface to stifle your creative urges.
+							</p>
+							<p>
+								Had a particularly engaging discussing over a lunch break? Make a question about it. A
+								big
+								discussion came up during a drill? Make a question about it.
+								You wake up from a fever dream about something that you wish EVERYONE was more familiar
+								with?! MAKE A QUESTION ABOUT IT.
+							</p>
+							<p>
+								The goal of this app is to make editing, updating, adding, and deleting questions so
+								seamless that you <strong>WANT</strong> to do it. Which will hopefully promote a more
+								organic exam bank and prevent stagnation.
+							</p>
+							<p style="font-size: small;">
+								In the future, I want to add an automatic approval pipeline (if desired)
+							</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-5-1">
+						<h2 class="section-heading">Making Changes to Existing Questions</h2>
+						<p>First and foremost, this app is about database management made simple. The Home View should
+							clue
+							you in to this, as, the most apparent thing you can do is scroll through
+							the entire bank.</p>
+						<p>
+							From here you are free to search through and review all the questions and answers in the
+							exam
+							bank. You are also able to edit the details of each question.
+						</p>
+						<div class="card p-2 bg-dark" style="width: 85%;">
+							<div class="card-header bg-dark">
+								<h5>You can do this via the Question Editor</h5>
+							</div>
+							<img src="/assets/images/Question Editor.png" class="card-img-top" alt="...">
+							<div class="card-body">
+								<p class="card-text" style="color:rgb(59, 59, 59)">You get here by pressing the right
+									facing
+									chevron on the Home View. For the
+									question you wish to edit, of course.</p>
+							</div>
+						</div>
+						<p class="pt-3">
+							From here, you can edit the question, the CET Level, the Learning Objective, and the Answer.
+							As
+							a reminder, the question text field will only allow you
+							up to 255 Characters, you will get a warning otherwise. Additionally, the Question and
+							Answer
+							fields are required, so you at least have to put a placeholder if you
+							wish to come back later.
+						</p>
+						<p>
+							You can also delete the individual questions from here if you wish. Fear not, you will be
+							asked
+							a very obvious "Are You Sure?" So, lest I made a mistake, you cannot accidentally delete a
+							question.
+						</p>
+						<p>
+							Finally, you can abort back to the Home View via the Cancel Button. Pressing the Cancel
+							Button
+							will
+							discard any changes you have not saved and leave the question unchanged, so you don’t have
+							to
+							worry about making any unintentional changes.
+						</p>
+						<div class="card bg-dark" style="width:25rem;">
+							<div class="card-header bg-dark p-1" style="text-align: center;">
+								<p class="m-0" style="font-size: small;">Just a thought</p>
+							</div>
+							<div class="card-body">
+								<p style="font-size: small;color: rgb(59, 59, 59);">
+									In the future I would like to add an option for grading exams and tracking question
+									statistics.
+									The trackable metrics and deliverables will probably be accessible via this page.
+									Make
+									sure to tell me if this
+									is something you are interested in.
+								</p>
+							</div>
+						</div>
+					</section>
+					<section class="docs-section" id="item-5-2">
+						<h2 class="section-heading">Adding New Questions</h2>
+						<p>Another Major Feature is the ability to add new questions to the database. As with editing,
+							this
+							is intended to be as
+							straight-forward as I could make it.
+						</p>
+						<div class="card bg-dark" style="width:85%;">
+							<h5 class="card-header" st>You get here by pressing the Add New button at the bottom of the
+								Home
+								View</h5>
+							<div class="card-body">
+								<div id="carousel2" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carousel2" data-slide-to="0" class="active"></li>
+										<li data-target="#carousel2" data-slide-to="1"></li>
+									</ol>
+									<div class="carousel-inner" role="listbox">
+										<div class="carousel-item active " data-interval="10000">
+											<img src="/assets/images/Add New no text.png" alt="First slide"
+												style="width: 100%;">
+										</div>
+										<div class="carousel-item" data-interval="10000">
+											<img src="/assets/images/Add New with text.png" alt="Second slide"
+												style="width: 100%;">
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+								<p class="card-text pt-3" style="color: rgb(59, 59, 59);">As you can see, this is the
+									exact
+									same view as the Question Editor. So, nothing is new here, and it has all
+									the same rules. That is, both the question and answer are required before you can
+									save
+									the entry and the question field has a 255 character limit.
+								</p>
+								<p style="color: rgb(59, 59, 59);">
+									You may also notice that the save button is, in fact, disabled before you have
+									entered
+									something into the Question and Answer field. This is for database integrity
+									reasons,
+									so, more
+									to save <i>MY</i> hairline than it is to protect you.
+								</p>
+							</div>
+						</div>
+					</section>
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+
+				<article class="docs-article" id="section-6">
+					<header>
+						<h1 class="docs-heading">Philosophy</h1>
+						<section>
+							<p>I don't want to imply that this isn’t a conversation that still needs to happen. I simply
+								want
+								to share my thoughts on what a training program like this
+								<i>should</i> look like.
+							</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-6-1">
+						<h2 class="section-heading">The Principles</h2>
+						<p>
+							It goes without saying that no training program was ever designed to NOT provide a
+							reasonable
+							level of certainty in an individual's skill level.
+						</p>
+						<p>
+							Some of us come from an industry in which the codes and credentialing are airtight, often
+							written because many lives have been lost. Some of us
+							come from the military, where rigorous training and compliance are paramount, or lives may
+							be
+							lost. That is how I know that we all
+							understand the level of scrutiny a program like the CETTP is attempting to cultivate. So, we
+							can
+							all agree that this program should uphold all of
+							us to the highest standard, especially a standard that our management can have faith in.
+						</p>
+						<p>
+							That is why I believe that we should hone the CET Training Program to reflect these beliefs.
+							I
+							believe that starts with the Question Bank, which is exactly why I
+							spent a month creating this app and all the associated framework.
+						</p>
+						<p>
+							The Microsoft standard suggests that the exam bank should have a minimum of 100 questions
+							and
+							those questions should be periodically updated.
+							The Question Editor and Add New Question features are designed to make this as simple as
+							possible, and though I made a joke out of it in the earlier section,
+							I believe we can take this one step further. Any time a training coordinator learns
+							something
+							new or an intense discussion during quals or a drill come up, it
+							should be our standard practice to put that piece of information into circulation. This is
+							the
+							first principle that I think we should adopt. The desire to
+							constantly improve our understanding and level of expertise.
+						</p>
+						<p>
+							The second principle is the logical successor to the first principle. We need to squash the
+							tribal aspect of our knowledge. I have not been here for
+							very long but the number of times I have heard the sentences "this is how we have always
+							done
+							it"
+							or "I don’t think that is a very good idea" or "if
+							we change it too many people will get confused" is too high. We need to adopt a growth
+							mindset
+							and ensure that any new or old knowledge is
+							vetted and approved by the appropriate body of knowledge. Be it the documentation or the
+							powers
+							that be. That starts with updating and backing
+							up all of our current knowledge with proof and (if possible) testing.
+						</p>
+						<p>
+							Another major paradigm shift that I believe would be beneficial is to hold ourselves to a
+							much
+							higher standard.
+							We do not have the person-power to have the command and qualification hierarchy of larger
+							facilities, and I
+							am not even implying that we should have one. I do not bring this topic up because I want to
+							bring people down,
+							but because I want to bring everyone UP. If we are going to accept and adopt the intention
+							behind Microsoft's
+							data-driven, open-book policy then we should do our best to meet the intent rather than
+							succumb
+							to it.
+							I suggest that we do this by limiting the resources that we can use during the test to
+							what
+							we would be
+							okay with using during a procedure or a break-fix. We wouldn't rely on written notes or CET
+							Study guides during
+							a UPS failure, so why would we use them during the test. Furthermore, I believe that the
+							standard by which the
+							questions are written should also be higher. Not that they should take so long that you
+							don't
+							have time to think,
+							or that they should be so difficult that you couldn't possibly know them without looking it
+							up,
+							but
+							that they should be
+							challenging enough
+							to make us think and, if we don’t know the answer, know where to look it up. That being
+							said,
+							instead of
+							fearing a more challenging exam, we should be constantly preparing for the exam. That way,
+							we
+							can be sure
+							that those that succeed are well qualified, and those that fail can be helped in a
+							meaningful
+							way. That is
+							why I included the Weekly Quiz feature.
+						</p>
+						<p>
+							That is all I have to say about that, and if you outright disagree with my thought process,
+							I
+							would love to
+							hear your take on it all. If we all work together and combine our vastly different
+							experiences
+							and skillsets,
+							the whole team will be better for it. And not just us, but our replacements.
+						</p>
+						<button type="button" class="btn btn-dark btn-sm" data-toggle="modal" data-target="#Modal4">
+							Just a small history lesson
+						</button>
+						<div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered modal-xl">
+								<div class="modal-content">
+									<div class="modal-header bg-dark">
+										<h5 class="modal-title" id="exampleModalLabel">Ebbinghaus and His Forgetting
+											Curve
+										</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body mx-auto bg-dark">
+										<div class="row">
+											<div class="col-md">
+												<div class="card" style="height:100%;">
+													<div class="card-body">
+														<img src="https://practicalpie.com/wp-content/uploads/2020/04/ebbinghaus-forgetting-curve.png"
+															alt="" style="width: 100%;">
+													</div>
+												</div>
+											</div>
+											<div class="col-md">
+												<div class="card" style="height:100%;">
+													<div class="card-body">
+														<img src="https://practicalpie.com/wp-content/uploads/2020/04/spaced-learning-retention-curves.png"
+															alt="" style="width: 100%;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer bg-dark" style="color: rgb(59, 59, 59);">
+										<p>The Ebbinghaus forgetting curve is a graphical representation of the
+											forgetting
+											process. The curve demonstrates the declining rate at which information is
+											lost
+											if
+											no particular effort is made to remember it.</p>
+
+										<p>The forgetting curve was defined in 1885 by German psychologist Hermann
+											Ebbinghaus
+											(1850-1909) in his book Memory: A Contribution to Experimental Psychology.
+											He
+											was
+											the first psychologist who systematically studied memory and learning.
+											Ebbinghaus
+											recorded his findings mathematically in an attempt to discover patterns of
+											forgetting and memory retention.</p>
+										<div class="card bg-secondary">
+											<div class="card-body" style="color:#f0f0f0;">
+												But as you can see, it is a natural and well-studied phenomenon. As such
+												it
+												should be
+												treated like any other optimization problem that we encounter on a daily
+												basis. The maths
+												behind memory management are defined and we would be remiss to not take
+												advantage of that.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+					</section>
+					<!--//section-->
+
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="section-7">
+					<header">
+						<h1 class="docs-heading">FAQs</h1>
+						<section>
+							<p>I wont have any frequently asked questions until questions are asked frequently. So, this
+								is
+								under construction.</p>
+						</section>
+						<!--//docs-intro-->
+						</header>
+						<section class="docs-section" id="item-7-1">
+							<h2 class="section-heading">Section Item 7.1 <small>(FAQ Category One)</small></h2>
+							<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>What's sit amet quam eget
+								lacinia?
+							</h5>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+								dolor.
+								Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+								ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+								Nulla
+								consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+								arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
+								felis eu
+								pede mollis premium.</p>
+						</section>
+						<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+				<footer class="footer">
+					<div class="text-center py-4">
+						<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+						<small class="copyright">Designed by <a class="theme-link" href="http://themes.3rdwavemedia.com"
+								target="_blank">Xiaoying Riley</a> for
+							developers</small>
+						<p><small>Implemented by Tyler Berube on behalf of the CP1 CE Team</small></p>
+					</div>
+				</footer>
+			</div>
 		</div>
-	</div>
 	</div>
 	<!--//docs-wrapper-->
 
